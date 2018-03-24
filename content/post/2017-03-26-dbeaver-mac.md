@@ -8,7 +8,7 @@ categories : [
 tags: ["SQL",
       "Dbeaver", ]
 aliases:
-  - "/post/dbeaver-mac/"
+  - "/2017-03-26-Dbeaver-on-Mac.html"
 ---
 
 # 0) What is [Dbeaver](http://dbeaver.jkiss.org/)?

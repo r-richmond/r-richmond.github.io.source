@@ -1,11 +1,13 @@
 ---
-title: "macOS EGPU Adventures"
+title: "macOS 10.13.2 EGPU Adventures"
 date: 2017-12-28
 draft: false
 categories : [
     "Tinkerer",
 ]
 tags: ["EGPU", ]
+aliases:
+  - "/2017-12-28-macos-egpu-adventures.html"
 ---
 
 # 1) What is an EGPU & when did Apple start supporting them?

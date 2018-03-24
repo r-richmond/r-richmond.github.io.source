@@ -9,11 +9,13 @@ tags: ["SQL",
       "Dbeaver",
       "Hive",
       "Kerberos", ]
+aliases:
+  - "/2017-05-06-Dbeaver-Hive-Kerberos.html"
 ---
 
 # 0) Install Dbeaver
 
-You can find installation instructions [here](/post/dbeaver-mac/)
+You can find installation instructions [here](/post/2017-03-26-dbeaver-mac/)
 
 # 1) Download the latest drivers
 You can find the latest drivers on the [Cloudera website](https://www.cloudera.com/downloads/connectors/hive/jdbc.html)

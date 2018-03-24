@@ -7,7 +7,8 @@ categories : [
 ]
 tags: ["Tableau",
        "Python", ]
-highlight : true
+aliases:
+  - "/2017-06-04-Improving-Tableau-Document-API.html"
 ---
 
 # 1) What is Tableau's Document API?
@@ -42,5 +43,7 @@ The [first version I used of Tableau's Document API](https://github.com/t8y8/doc
 # 5) Tying it all together
 
 So now if you find yourself in a situation where you need to modify the query bands or the initial sql in your workbooks you can use the TDA to save yourself some time.
+
+Update: Looks like Tableau was even kind enough to mention this new feature in the [release notes of 10.2](https://www.tableau.com/about/blog/2017/2/check-out-new-enterprise-features-tableau-102-66459) Search for "And with our Document API"
 
 Cheers!

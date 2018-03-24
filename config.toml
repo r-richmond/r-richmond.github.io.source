@@ -146,7 +146,7 @@ defaultContentLanguageInSubdir = false
   #   https://sourcethemes.com/academic/post/writing-markdown-latex/#highlighting-options
   highlight = true
   highlight_languages = ["bash", "python", "sql"]
-  # highlight_style = "github"
+  highlight_style = "obsidian"
 
   # Enable native social sharing buttons?
   sharing = true
