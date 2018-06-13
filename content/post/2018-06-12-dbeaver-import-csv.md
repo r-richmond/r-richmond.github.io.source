@@ -6,7 +6,7 @@ categories : [
     "Analyst",
 ]
 tags: ["SQL",
-      "Dbeaver",
+      "DBeaver",
       "CSV",
       ]
 ---

@@ -1,19 +1,19 @@
 ---
-title: " Connecting to Hive with Dbeaver using Kerberos Authentication"
+title: " Connecting to Hive with DBeaver using Kerberos Authentication"
 date: 2017-05-06
 draft: false
 categories : [
     "Analyst",
 ]
 tags: ["SQL",
-      "Dbeaver",
+      "DBeaver",
       "Hive",
       "Kerberos", ]
 aliases:
-  - "/2017-05-06-Dbeaver-Hive-Kerberos.html"
+  - "/2017-05-06-DBeaver-Hive-Kerberos.html"
 ---
 
-# 0) Install Dbeaver
+# 0) Install DBeaver
 
 You can find installation instructions [here](/post/2017-03-26-dbeaver-mac/)
 
@@ -27,7 +27,7 @@ You can find the latest drivers on the [Cloudera website](https://www.cloudera.c
 
 ![jars_in_folder](/img/20170506_hive_jars_in_place.png)
 
-# 4) Create New Driver in Dbeaver
+# 4) Create New Driver in DBeaver
 
   1. Navigate to Database > Driver Manager > New
   1. Add all the files from `~/.dbeaver-drivers/cloudera-hive/`
