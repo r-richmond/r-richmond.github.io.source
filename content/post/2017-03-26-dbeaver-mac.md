@@ -17,7 +17,7 @@ Quite simply DBeaver is the best multi-database SQL IDE that I've used. It suppo
 
 # 1) Install Java
 
-First we need to install java which can be easily done as follows:
+First we need to install java which can be easily by running the following command in terminal ([homebrew required](https://brew.sh/)):
 
 ```bash
 brew cask install java
@@ -27,7 +27,6 @@ Note: Previous versions of this article instructed an installation of the cask `
 
 ## Notes
 
-  * If you don't have [Homebrew install it here](https://brew.sh/)
   * I recommend the newest version of Java as DBeaver regularly depreciates old versions of Java
     * [Java SE6](https://support.apple.com/kb/DL1572?locale=en_US) is not supported
 

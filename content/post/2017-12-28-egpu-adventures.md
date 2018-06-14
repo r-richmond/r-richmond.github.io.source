@@ -74,8 +74,9 @@ Using my EGPU setup I received a score of [175,303](https://browser.geekbench.co
     * It is far lighter than a desktop tower but still heavy enough to dissuade any thoughts of lugging it around
 * Drivers
     * I thought that the Vega series would have first class support as an EGPU because of the Vega's inclusion in the iMac Pro however, since system information doesn't accurately identify the card it is clear that some support is still yet to come, likely in the spring
-* Support
-    * If you go with the Vega or really any other setup other than the [Apple EGPU kit](https://developer.apple.com/development-kit/external-graphics/) you are in an area that isn't officially supported
-    * That being said you won't be alone or the first so don't let that hold you back too much
+    * Update as of 10.13.4 This has been resolved with Apple now officially supporting EGPU setups
+* Support (Apple now officially supports EGPU setups for AMD cards)
+    * ~~If you go with the Vega or really any other setup other than the [Apple EGPU kit](https://developer.apple.com/development-kit/external-graphics/) you are in an area that isn't officially supported~~
+    * ~~That being said you won't be alone or the first so don't let that hold you back too much~~
 
-In summary I'd recommend an EGPU to anyone who is looking for a more robust GPU. The Pros are very compelling and the cons while worth considering don't represent a significant cost. The only other thing I'll call out is that I'd recommend the [Vega56](http://amzn.to/2C4u4Gw) + [Mantiz](http://amzn.to/2CgKwQR) rather than the [Vega64](http://amzn.to/2Ci1wpR) + Mantiz given the Vega64 requires an unsupported/warranty-breaking modification.
+In summary I'd recommend an EGPU to anyone who is looking for a more robust GPU. The Pros are very compelling and the cons while worth considering don't out weight the benefits for anyone looking for improved performance. The only other thing I'll call out is that I'd recommend the [Vega56](http://amzn.to/2C4u4Gw) + [Mantiz](http://amzn.to/2CgKwQR) rather than the [Vega64](http://amzn.to/2Ci1wpR) + Mantiz given the Vega64 requires an unsupported/warranty-breaking modification.

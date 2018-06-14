@@ -20,14 +20,14 @@ You can find installation instructions [here](/post/2017-03-26-dbeaver-mac/)
 # 1) Download the latest drivers
 You can find the latest drivers on the [Cloudera website](https://www.cloudera.com/downloads/connectors/hive/jdbc.html)
 
-# 2) Create a folder
+# 2) Create a folder to store the drivers
 `mkdir ~/.dbeaver-drivers/cloudera-hive/`
 
-# 3) Extract driver jars and move to folder
+# 3) Extract driver jars and move to the folder we made earlier
 
 ![jars_in_folder](/img/20170506_hive_jars_in_place.png)
 
-# 4) Create New Driver in DBeaver
+# 4) Create a New Driver in DBeaver
 
   1. Navigate to Database > Driver Manager > New
   1. Add all the files from `~/.dbeaver-drivers/cloudera-hive/`
@@ -38,9 +38,9 @@ You can find the latest drivers on the [Cloudera website](https://www.cloudera.c
     * Note you need to change `FOO.BAR` to match your krb5.conf settings
 
 
-# 5) Create New Connection
+# 5) Create a New Connection
 
-  1. Navigate to Database > New Connection
+  1. In the menu bar Navigate to `Database > New Connection`
   1. Select Hive-Cloudera
   1. Fill in the appropriate values for host & database (I set database to default)
   1. Set server to be your KrbHostFQDN
@@ -62,7 +62,7 @@ If you are receiving `[Cloudera][HiveJDBCDriver](500168) Error creating login co
   1. For Windows adding the following lines to your dbeaver.ini may be necessary as well
     * `Djava.security.krb5.conf=c:\kerberos\krb5.ini`
     * `Djava.security.auth.login.config=c:\kerberos\jaas.conf`
-      * success has been reported with the following jaas.conf file & keytab usage
+      * success has also been reported with the following jaas.conf file & keytab usage
       ```
     Client {
        com.sun.security.auth.module.Krb5LoginModule required

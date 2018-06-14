@@ -15,9 +15,7 @@ Previously I was using [Pelican](https://github.com/getpelican/pelican) a static
 
 ## Why Change
 
-As it turns out if you aren't going to be modifying the static site generator in anyway you don't need to concern yourself with the language that it is written in. This fact escaped me while I was seeking out Pelican. Coming to this realization opened up a world of possibilities and when I saw an article discussing Hugo and its killer feature, I made the jump!
-
-Hugo's killer feature: [Live Reload](https://gohugo.io/getting-started/usage/#livereload)
+As it turns out if you aren't going to be modifying the static site generator in anyway you don't need to concern yourself with the language that it is written in. This fact escaped me while I was seeking out Pelican. Coming to this realization opened up a world of possibilities and when I saw an article discussing Hugo and its killer feature, [Live Reload](https://gohugo.io/getting-started/usage/#livereload), I made the jump!
 
 ## Unique Migration tasks
 

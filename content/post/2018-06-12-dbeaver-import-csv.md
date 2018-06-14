@@ -22,7 +22,7 @@ You can find installation instructions [here](/post/2017-03-26-dbeaver-mac/)
 Place the CSV you want to load into this folder
 
 ## 2) Create a CSV database connection
-In the menubar select `Database > Create a New Connection`
+In the menu bar select `Database > Create a New Connection`
  & from the list of drivers select `Flat files(CSV) > CSV/DBF`
 
 ![select_driver](/img/20180612_select_driver.png)
@@ -39,7 +39,7 @@ Note: If you run into trouble downloading the driver navigate to the [source web
 
 ![import_table_data](/img/20180612_import_table_data.png)
 
-3.2) Next select your target CSV as the source container
+3.2) Next select your source CSV from your CSV connection as the source container
 
 ![select_csv_table](/img/20180612_select_csv_table.png)
 
@@ -47,7 +47,7 @@ Note: In this example case I'm loading a test CSV into a Postgres database but t
 
 ## 4) Ensure that the mappings of each of your columns is correct
 
-* For columns that are exact match DBeaver will map them correctly for you
+* For column names that are an exact match DBeaver will automatically map them for you
 * For the remaining columns make sure to map the source columns to your desired target columns
 
 ![map_columns](/img/20180612_map_columns.png)
@@ -58,16 +58,15 @@ Note: For large files it may be necessary to go get lunch but in my case 4 recor
 
 ![data_finished](/img/20180612_data_finished.png)
 
-## 6) Check to make sure that the data has finished loading
+## 6) Check to make sure that the data has loaded correctly
 
-As a last optional step it is good practice to make sure that everything loaded correctly which you can see here
+As a last optional step it is good practice to make sure that everything loaded correctly which can easily be done by running a query against your target DB
 
 ![data_in_table](/img/20180612_data_in_table.png)
 
 ## 7) Final Notes & Thoughts
 
-* While this process takes a little bit more time to get setup than other tools the setup part is only a one time pain
-* After setting this up you are also able to easily query CSVs using SQL within the best SQL IDE on the market :)
-  * Simply use the CSV connection like any other connection
-* The only real pain point that I have run across is that if you add a new CSV file or add/delete columns in an active CSV connection you have to restart the import wizard & refresh the CSV connection for the changes to be picked up
-  * this feedback was provided in [issue 926](https://github.com/dbeaver/dbeaver/issues/926) hopefully it is resolved in a future update
+* While this process takes a little bit more time to get setup than other tools setting up the CSV connection only needs to be done once
+  * One side benefit of this as well is that you are now able to run SQL queries against CSVs very easily
+* The only real pain point that I have run across is that if you add a new CSV file or add/delete columns in an active CSV connection you have to cancel the import wizard & refresh the CSV connection for the changes to be picked up
+  * this feedback was provided in [issue 926](https://github.com/dbeaver/dbeaver/issues/926) and hopefully it will be resolved in a future update
