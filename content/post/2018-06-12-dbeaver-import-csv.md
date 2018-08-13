@@ -11,6 +11,10 @@ tags: ["SQL",
       ]
 ---
 
+## Update: August 12, 2018
+
+The following post demonstrates how to import CSVs using Dbeaver's database to database export & import feature. If you are certain of the quality of your CSV & just want to import it quickly my subsequent [post](/post/2018-08-12-dbeaver-import-csv-2/) may be more useful.
+
 ## 0) Install DBeaver
 
 You can find installation instructions [here](/post/2017-03-26-dbeaver-mac/)
