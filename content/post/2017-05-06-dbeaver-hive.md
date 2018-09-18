@@ -60,19 +60,21 @@ If you are receiving `[Cloudera][HiveJDBCDriver](500168) Error creating login co
   1. That you've configured your `/etc/krb5.conf` successfully
     * If you've done this correctly you should be able to run `kinit` in terminal and create a ticket without issue
   1. For Windows adding the following lines to your dbeaver.ini may be necessary as well
-    * `Djava.security.krb5.conf=c:\kerberos\krb5.ini`
-    * `Djava.security.auth.login.config=c:\kerberos\jaas.conf`
+    * `-Djava.security.krb5.conf=c:\kerberos\krb5.ini`
+      * note: this is the windows equivalent of `/etc/krb5.conf`
+    * `-Djava.security.auth.login.config=c:\kerberos\jaas.conf`
       * success has also been reported with the following jaas.conf file & keytab usage
-      ```
-    Client {
-       com.sun.security.auth.module.Krb5LoginModule required
-            debug=true
-            doNotPrompt=true
-            useKeyTab=true
-            keyTab="C:\Users\{user}\krb5cc_{user}"
-            useTicketCache=true
-            renewTGT=true
-            principal="{user}@FOO.BAR"
-        ;
-    };
+
+```
+Client {
+   com.sun.security.auth.module.Krb5LoginModule required
+        debug=true
+        doNotPrompt=true
+        useKeyTab=true
+        keyTab="C:\Users\{user}\krb5cc_{user}"
+        useTicketCache=true
+        renewTGT=true
+        principal="{user}@FOO.BAR"
+    ;
+};
 ```
