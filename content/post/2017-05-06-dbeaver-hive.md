@@ -29,7 +29,7 @@ You can find the latest drivers on the [Cloudera website](https://www.cloudera.c
 
 # 4) Create a New Driver in DBeaver
 
-  1. Navigate to Database > Driver Manager > New
+  1. Navigate to `Database > Driver Manager > New`
   1. Add all the files from `~/.dbeaver-drivers/cloudera-hive/`
   1. Driver name: `Hive-Cloudera` (for labeling only)
   1. Class name: `com.cloudera.hive.jdbc41.HS2Driver` (at the time of this writing)
