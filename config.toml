@@ -151,7 +151,7 @@ enableGitInfo = false
   #   Themes: https://highlightjs.org/static/demo/
   highlight = true
   highlight_languages = ["bash", "python", "sql"]
-  highlight_style = "sunburst" # "solarized-dark"
+  highlight_style = "obsidian" #"sunburst" # "solarized-dark"
 
   # Enable native social sharing buttons?
   sharing = true
