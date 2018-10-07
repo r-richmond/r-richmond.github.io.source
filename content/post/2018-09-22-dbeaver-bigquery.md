@@ -1,5 +1,5 @@
 ---
-title: " Connecting to Google BigQuery with DBeaver"
+title: " Connecting to Google BigQuery with DBeaver with JDBC Drivers"
 date: 2018-09-22
 draft: false
 categories : [
@@ -10,6 +10,11 @@ tags: ["SQL",
       "BigQuery",
       ]
 ---
+
+# Update (2018-10-07)
+Shortly after this post DBeaver was updated with a native connector.
+Please see this [post](/post/2018-10-07-dbeaver-bigquery-part2/) for a more up to date connection instructions if
+you have updated DBeaver to 5.2.2 or later.
 
 # 0) Install DBeaver
 
@@ -44,7 +49,7 @@ You can find the latest drivers on [Google's website](https://cloud.google.com/b
 
 # 6) Create a New Connection
 
-  1. In the menu bar Navigate to `Database > New Connection`
+  1. In the menu bar navigate to `Database > New Connection`
   1. Select BigQuery
   1. Fill in the appropriate values for host, server, user
   1. Set host to the path the service account key e.g., `/Users/admin/.dbeaver_drivers/bigquery/project_name-####.json`
@@ -59,6 +64,5 @@ You can find the latest drivers on [Google's website](https://cloud.google.com/b
 # 7) Troubleshooting
 
   * If you receive `[Simba][BigQueryJDBCDriver](100004) HttpTransport IO error : 403 Forbidden` make sure you've created a service account with the necessary permissions.
-  * As of Dbeaver 5.2.0 Dbeaver is unable to return arrays of ints and other numerics
+  * -As of Dbeaver 5.2.0 Dbeaver is unable to return arrays of ints and other numerics-
     * e.g., select [1, 2] as ids results in `org.jkiss.dbeaver.model.exec.DBCException: SQL Error [10140] [22003]: [Simba][JDBC](10140) Error converting value to long.`
-    * You can still use
