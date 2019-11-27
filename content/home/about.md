@@ -1,34 +1,14 @@
 +++
-# About/Biography widget.
-widget = "about"
-active = true
-date = "2017-01-01"
+# About widget.
+widget = "about"  # See https://sourcethemes.com/academic/docs/page-builder/
+headless = true  # This file represents a page section.
+active = true  # Activate this widget? true/false
+weight = 100  # Order that this section will appear in.
 
-# Order that this section will appear in.
-weight = 100
+title = "Biography"
 
-# List your academic interests.
-[interests]
-  interests = [
-    "Data",
-    "Problem Solving",
-    "Tinkering",
-    "Gaming",
-  ]
-
-# List your qualifications (such as academic degrees).
-[[education.courses]]
-  course = "MBA"
-  #institution = "Stanford University"
-  #year = 2014
-
-[[education.courses]]
-  course = "BSc in Civil Engineering"
-  #institution = "Massachusetts Institute of Technology"
-  #year = 2011
-
+# Choose the user profile to display
+# This should be the username of a profile in your `content/authors/` folder.
+# See https://sourcethemes.com/academic/docs/get-started/#introduce-yourself
+author = "r-richmond"
 +++
-
-# Biography
-
-r-richmond is an analytically minded individual who is currently pursuing data analytics at a large tech company. His expertise lies in SQL, Tableau, & Python. His experience ranges from submitting pull requests for Tableau's open sourced tools to recommending new business strategies.
